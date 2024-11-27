@@ -18,7 +18,7 @@ public final class Fragments {
     /**
      * Maximum segment size (header + body) allowed to leave the split method
      */
-    public static final int MAXIMUM_PACKET_SIZE = 500;
+    public static final int MAXIMUM_PACKET_SIZE = 550;
 
     /**
      * Splits a packet into several sub-packets.

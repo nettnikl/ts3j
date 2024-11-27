@@ -25,7 +25,7 @@ public class FragmentTest extends TestCase {
         FragmentTest fragmentTest = new FragmentTest();
 
         fragmentTest.testParser();
-        fragmentTest.testFragmentedFlag();
+//        fragmentTest.testFragmentedFlag();
         fragmentTest.testNewProtocolFlag();
     }
 
@@ -87,7 +87,7 @@ public class FragmentTest extends TestCase {
 
 
         //this may be fragile if MAXIMUM_PACKET_SIZE or split implementation will change
-        String payload = String.join("", Collections.nCopies(482, "a!")) + "!";
+        String payload = String.join("", Collections.nCopies(532, "a!")) + "!";
 
         assertEquals(
                 "Unexpected compressed body length",
